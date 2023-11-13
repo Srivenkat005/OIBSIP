@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div class="header">
+  <h1>CALCULATOR</h1>
+</div>
+
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+      <button onclick="appendToDisplay('(')">(</button>
+      <button onclick="appendToDisplay(')')">)</button>
+      <td><button onclick="appendToDisplay('ans')">ans</button>
+      <button onclick="deleteLastcharacter()">DEL</button>
+      <button onclick="clearDisplay()">C</button>
+      <button id="btn-7"onclick="appendToDisplay('7')">7</button>
+      <button id="btn-8"onclick="appendToDisplay('8')">8</button>
+      <button id="btn-9"onclick="appendToDisplay('9')">9</button>
+      <button id="btn-%"onclick="appendToDisplay('%')">%</button>
+      <button id="btn-√"onclick="appendToDisplay('√')">√</button>
+      <button id="btn-4"onclick="appendToDisplay('4')">4</button>
+      <button id="btn-5"onclick="appendToDisplay('5')">5</button>
+      <button id="btn-6"onclick="appendToDisplay('6')">6</button>
+      <button id="btn-*"onclick="appendToDisplay('*')">*</button>
+      <button id="btn-/"onclick="appendToDisplay('/')">/</button>
+      <button id="btn-1"onclick="appendToDisplay('1')">1</button>
+      <button id="btn-2"onclick="appendToDisplay('2')">2</button>
+      <button id="btn-3"onclick="appendToDisplay('3')">3</button>
+      <button id="btn-+"onclick="appendToDisplay('+')">+</button>
+      <button id="btn-sub"onclick="appendToDisplay('-')">-</button>
+      <button id="btn-dot"onclick="appendToDisplay('.')">.</button>
+      <button id="btn-0"onclick="appendToDisplay('0')">0</button>
+      <button id="btn-±"onclick="PlusMinus()">±</button>
+      <button id="btn-="onclick="calculateResult()">=</button>
+            
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
